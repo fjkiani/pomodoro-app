@@ -71,13 +71,16 @@ class App extends React.Component {
      })
    }
 
+  //  switch from session to break length
    onToggleInterval (isSession) {
+     //if currently only session time
      if(isSession) {
       this.setState ({
         timeMinute: this.state.sessionLength
        })
       } 
      else {
+       //break time is currently going now 
        this.setState ({
          timerMinute : this.state.breakLength,
          breakLength : this.state.breakLength
@@ -101,11 +104,11 @@ class App extends React.Component {
           decreaseBreak = {this.onDecreaseBreak} 
           />
         <Time 
-          time = {this.state.timerLength}
+          timerMinute = {this.state.timerMinute}
           // if the timer has stopped, break timer will be running 
           breakLength = {this.state.breakLength}
           updateTimerMinute = {this.onUpdateTimerMinute}
-          onToggleInterval = {this.onToggleInterval}
+          toggleInterval = {this.onToggleInterval}
         
         
         />

@@ -15,6 +15,7 @@ export default class Time extends Component {
     play() {
         //start timer
         //update every second
+        //calls decrease timer 
         let intervalId = setInterval (this.decreaseTimer, 1000)
         this.setState ({
             intervalId : intervalId
