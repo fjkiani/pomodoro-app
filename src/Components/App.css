@@ -1,0 +1,12 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+  }
