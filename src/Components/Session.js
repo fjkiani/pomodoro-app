@@ -23,11 +23,12 @@ export default function Session(props) {
 
     return (
         <div>
-           <section>
+           <section className="userInterface">
             <h4>How long do you want to focus for?</h4>
-            <button onClick = {decreaseSession}>Down</button>
-            <p>{props.session}</p>  
-           <button onClick = {increaseSession}>Up</button>
+           
+             <button onClick = {increaseSession}>Heavy</button>
+             <p className="propsStyle">{props.session}:minutes</p>  
+            <button onClick = {decreaseSession}>Light</button>
           </section> 
         </div>
     )
