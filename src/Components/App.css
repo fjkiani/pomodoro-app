@@ -1,11 +1,17 @@
 
+*{
+
+  overflow-x: hidden;
+  }
 
 body {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    /* height: 90vh; */
+    /* height: 90vh; */  
+  padding: 0px;
+  margin: 0px;
 }
 
 h2 {
