@@ -1,9 +1,9 @@
 import React from 'react'
+import '../ComponentStyle/breakInterval.css';
+
 
 // onClick methods will uplift the state 
 // will be called in app.js
-
-
 function Break (props) {
         function decreaseCounter () {
             //cant decrease lower than 1

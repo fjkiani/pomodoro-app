@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+import '../ComponentStyle/sessionActions.css';
+import '../ComponentStyle/timer.css';
+
 
 export default class Time extends Component {
     constructor () {

@@ -4,6 +4,7 @@ import Session from "./Session.js"
 import Time from "./Time.js"
 import './App.css'
 import Instructions from './Instructions.js';
+import logo from "../ComponentStyle/logo.jpg"
 
 
 
@@ -100,8 +101,8 @@ class App extends React.Component {
   render() {
     return ( 
         <div>
-        <h2>Get Things Done Clock</h2>
-        <h1>By FJK</h1>
+        <div className="logo"><img src={logo}></img></div>
+        {/* <h1>By FJK</h1> */}
         <hr></hr>
         <Session 
         isPlay={this.state.isPlay}
